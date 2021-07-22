@@ -1,0 +1,136 @@
+* {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url(https://s3.cloud.cmctelecom.vn/tinhte1/2018/04/4282714_9PShuk4.jpg);
+  font-family: Roboto, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-social-links {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mang-xa-hoi {
+  width: 25%;
+}
+
+.mang-xa-hoi a {
+  width: 100%;
+}
+
+.mang-xa-hoi img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.avatar {
+  margin: auto;
+  top: 20%;
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar > div {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(49, 142, 185);
+  border-radius: 100%;
+}
+
+.avatar > div::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.avatar img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  border-radius: 100%;
+}
+:root {
+  --text-color: gray;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.name,
+.profile-bio {
+  text-align: center;
+}
+.profile-bio {
+  margin-top: 2.5%;
+}
+
+.profie-name {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  color: var(--text-color);
+  background-color: rgba(4, 64, 75, 0.89);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 50px;
+}
+
+
+
+
+
+
+.rainbow-text {
+  background-image: repeating-linear-gradient(
+    60deg,
+    violet,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  text-align: center;
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 5s ease infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 25%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
